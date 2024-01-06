@@ -1,5 +1,46 @@
-body {
-  background-color: black;
-  color: white;
-  font-family: Arial;
+* {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.nav-list {
+    width:100%;
+    margin:0;
+    padding:1rem 0;
+    border-radius:var(--radius);
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.nav-item{
+    list-style:none;
+}
+
+.nav-item a{
+    text-decoration: none;
+}
+
+.sign-in-btn{
+    background-color: #ccff66;
+    color:black;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    padding:0.5rem 1rem;
+}
+
+#search{
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    flex-grow: 1;
+}
+
+#logo img{
+    margin-top: 15px;
+    margin-left: 10px;
+    width:150px;
 }
