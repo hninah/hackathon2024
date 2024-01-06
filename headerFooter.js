@@ -54,7 +54,7 @@ class SpecialHeader extends HTMLElement {
 
 class SpecialFooter extends HTMLElement {
     connectedCallback() {
-        this.innnerHTML = `
+        this.innerHTML = `
         <footer class="footer">
         <a href="signin.html"><button class="footer-button">Sign in for more access</button></a>
         
