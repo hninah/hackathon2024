@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <script>
+    </script>
+    <style>
+        .content {
+            width: 100%;
+            text-align: left;
+        }
+
+        .carousel {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0%;
+        }
+
+        .movie-list {
+            width: 1000px;
+            height: 500px;
+            display: flex;
+            scroll-behavior: smooth;
+            overflow: auto;
+            scroll-snap-type: x mandatory;
+
+        }
+
+        .movieimg {
+            scroll-snap-align: center;
+            width: 220px;
+            height: 300px;
+            margin: 5px;
+
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <h2>Top 10 on Moviemeter this week</h2>
+    <div class="content">
+        <div class="carousel">
+            <div id="movie-list" class="movie-list">
+                <div class="movie1">
+                    <img id="movieimg" class="movieimg" src="images/fnaf.jpg" style="margin: 5px 5px 5px 5px;" />
+                </div>
+                <div class="movie2">
+                    <img id="movieimg" class="movieimg" src="images/cloudy.jpg" style="margin: 5px 5px 5px 5px;" />
+                </div>
+                <div class="movie3">
+                    <img id="movieimg" class="movieimg" src="images/conjuring.jpg" style="margin: 5px 5px 5px 5px;" />
+                </div>
+                <div class="movie4">
+                    <img id="movieimg" class="movieimg" src="images/elf.jpg" style="margin: 5px 5px 5px 5px;" />
+                </div>
+                <div class="movie5">
+                    <img id="movieimg" class="movieimg" src="images/homealone2.jpg" style="margin: 5px 5px 5px 5px;" />
+                </div>
+                <div class="movie6">
+                    <img id="movieimg" class="movieimg" src="images/lalaland.jpg" style="margin: 5px 5px 5px 5px;" />
+                </div>
+                <div class="movie7">
+                    <img id="movieimg" class="movieimg" src="images/lordofrings.jpg" style="margin: 5px 5px 5px 5px;" />
+                </div>
+                <div class="movie8">
+                    <img id="movieimg" class="movieimg" src="images/thegodfather.jpg"
+                        style="margin: 5px 5px 5px 5px;" />
+                </div>
+                <div class="movie9">
+                    <img id="movieimg" class="movieimg" src="images/thehungergames.jpg"
+                        style="margin: 5px 5px 5px 5px;" />
+                </div>
+                <div class="movie10">
+                    <img id="movieimg" class="movieimg" src="images/wonka.jpg" style="margin: 5px 5px 5px 5px;" />
+                </div>
+                <div class="movie11">
+                    <a href="https://www.youtube.com/watch?v=-zN2e9jcVo0"><img id="movieimg" class="movieimg"
+                            src="images/wonka.jpg" style="margin: 5px 5px 5px 5px;" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
