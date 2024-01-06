@@ -29,6 +29,11 @@
     outline: none;
     border-radius: 5px;
     padding:0.5rem 1rem;
+    transition: background-color 0.15s;
+}
+.sign-in-btn:hover {
+    cursor: pointer;
+    background-color: #c0fd47;
 }
 
 #search{
