@@ -84,8 +84,7 @@ main {
 
   position: absolute;
   top: 0;
-  left: auto;
-  right: 625px;
+  right: 510px;
   transition: background-color 0.15s;
 }
 
