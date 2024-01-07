@@ -34,7 +34,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-button:hover {
+.signin-button:hover {
   cursor: pointer;
   background-color: #c0fd47;
 }
