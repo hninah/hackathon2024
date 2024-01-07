@@ -12,6 +12,7 @@ body {
     display: inline-block;
 }
 .make-account {
+    font-size: large;
     border: 0.5px solid white;
     padding: 7px;
     background-color: #8dba33;
