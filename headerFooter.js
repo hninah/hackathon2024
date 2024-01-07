@@ -3,7 +3,7 @@ class SpecialHeader extends HTMLElement {
         this.innerHTML = `<navbar>
         <ul class="nav-list" id="nav-list">
             <li class="nav-item" id="logo">
-                <img src="https://cdn.discordapp.com/attachments/1193230272792100957/1193275255645556746/logo.jpg?ex=65ac1f2e&is=6599aa2e&hm=571d31876a93a59a8996d211787cbcf85ff46ac6a9744f68d9e0a73487d60e76&">
+                <a href="index.html"><img src="https://cdn.discordapp.com/attachments/1193230272792100957/1193275255645556746/logo.jpg?ex=65ac1f2e&is=6599aa2e&hm=571d31876a93a59a8996d211787cbcf85ff46ac6a9744f68d9e0a73487d60e76&"></a>
             </li>
             <li class="nav-item">
                 <div class="dropdown">
