@@ -34,11 +34,6 @@ footer {
   margin-bottom: 20px;
 }
 
-.signin-button:hover {
-  cursor: pointer;
-  background-color: #c0fd47;
-}
-
 .social-media-icons {
   display: flex;
   justify-content: center;
