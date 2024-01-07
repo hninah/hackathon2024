@@ -1,0 +1,63 @@
+.content {
+    width: 100%;
+    text-align: left;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0%;
+}
+
+.movie-list {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+
+}
+
+.movie {
+    background-color: dimgray;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.movieimg {
+    scroll-snap-align: center;
+    width: 220px;
+    height: 300px;
+}
+
+.rate {
+    background-color: dimgray;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.title {
+    height: 40px;
+    background-color: dimgray;
+    margin-bottom: 6px;
+}
+
+.showtime {
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 220px;
+    height: 25px;
+    text-align: center;
+    color: blue;
+}
+
+.trailer {
+    margin-top: 15px;
+    text-align: center;
+    background-color: dimgray;
+}
