@@ -46,9 +46,9 @@ footer {
 
 .social-media-icons img {
   text-decoration: none;
-  padding: 10xp;
+  padding: 10px;
   background-color: white;
-  margin: 10xp;
+  margin: 10px;
   border-radius: 50%;
 
 }
@@ -81,10 +81,6 @@ footer {
   font-size: 17px;
 }
 
-.amazon-logo {
-  width: 200px;
-  margin-left: 500px;
-}
 
 .footer-bottom {
   background-color: black;
