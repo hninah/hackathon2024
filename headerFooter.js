@@ -57,43 +57,47 @@ class SpecialHeader extends HTMLElement {
 class SpecialFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <footer class="footer">
-        <a href="signin.html"><button class="footer-button">Sign in for more access</button></a>
-        
-        <div class="social-media-icons"> 
-          <img class="tiktok-icon" src="">
-          <img class="instagram-icon" src="icons/instagram.jpg">
-          <img class="youtube-icon" src="icons/youtube.png">
-          <img class="twitter-icon" src="icons/twitter.jpg">
-          <img class="facebook-icon" src="icons/facebook.png">
-        </div>
+        <footer>
+        <div class="footer-container">
   
-        <div class="affiliate-links">
-          <div class="individual-link" >Get the IMDb App <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></div>
-          <div class="individual-link" >Help <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></div>
-          <div class="individual-link" >Site Index <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></div>
-          <div class="individual-link" >IMDbPro <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></div>
-          <div class="individual-link" >Box Office Mojo <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></div>
-          <div class="individual-link" >IMDb Developer <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></div>
-        </div>
+          <div class="signin-button-container">
+            <a href="signin.html"><button class="signin-button">Sign in for more access</button></a>
+          </div>
   
-        <div class="other-links">
-          <div class="individual-link" >Press Room</div>
-          <div class="individual-link" >Advertising <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></div>
-          <div class="individual-link" >Jobs <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></div>
-          <div class="individual-link" >Conditions of Use</div>
-          <div class="individual-link" >Privary Policy</div>
-          <div class="individual-link" >Your Ads Privacy Choices <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></div>
+          <div class="social-media-icons">
+            <img class="tiktok-icon" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSVr-HhhD2bUi0rxQU8rx-it1v-BJZtBZT77K0AN9xvZiW9sbn_1CcjfzZL96AKxdbCbWxNZ4wIAcvgJjANy1WOmRhPIQ=s2560">
+            <img class="instagram-icon" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR6dMf3nEqL_XnvJJWwJiJxnJkUHicUzzpzCFIqwPT2g8yoAAhF_w0pWugGrjramgYk_Yrmr5c3dskClaoAmZZwDLaMoA=s2560">
+            <img class="youtube-icon" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQcb6-4uzbiw9U7sA3ErwchNfV-qREYpKLUAubaXXg-hbw3rFCdRECLQ-0mMrGIyUtpd5U4jand1Cc4V36GIT1rXoYQNQ=s2560">
+            <img class="twitter-icon" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQZIU8r3Ymw1QrMw6qam2HICICPhCpFobrC6BN6EFfT9IfRAPqLZBH-2yAeoHjL0cr-Bes77V_zKygW-5KSTHaWBqASeg=s2560">
+            <img class="facebook-icon" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTPnXD4T_N-tYSdQt2GXzUzuvAAcE-GwBXh_MUH9vgSfCauXd2-xle5Wl-oFlFSLo-Rdl0_LQWq8bYx2rJSeukTMuZy4A=s2560">
+          </div>
+    
+          <div class="affiliate-links"> 
+            <ul>
+              <li>Get the Cinemeter App <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></li>
+              <li>Help <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></li>
+              <li>Site Index <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></li>
+              <li>Box Office Mojo <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></li>
+              <li>Cintemeter Developer <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></li>
+            </ul>
+          </div>
+    
+          <div class="other-links">
+            <ul>
+              <li>Press Room</li>
+              <li>Advertising <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></li>
+              <li>Jobs <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></li>
+              <li>Conditions of Use</li>
+              <li>Privacy Policy</li>
+              <li>Your Ads Privacy Choices <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--launch-inline ipc-icon--inline ipc-link__launch-icon" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M21.6 21.6H2.4V2.4h7.2V0H0v24h24v-9.6h-2.4v7.2zM14.4 0v2.4h4.8L7.195 14.49l2.4 2.4L21.6 4.8v4.8H24V0h-9.6z"></path></svg></li>
+            </ul>
+          </div>
+    
+          <div class="footer-bottom">
+            <p>© 1990-2024 by IMDb.com, Inc.</p>
+          </div>
+    
         </div>
-  
-        <div class="amazon-logo-container">
-          <img class="amazon-logo" src="icons/amazon-logo.png">
-        </div>
-  
-        <div class="copyright">
-          © 1990-2024 by IMDb.com, Inc.
-        </div>
-      
       </footer>
         `
     }
