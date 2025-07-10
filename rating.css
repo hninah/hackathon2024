@@ -24,7 +24,7 @@
 }
 
 .rate>input:checked~label {
-    color: #ffc700;
+    color: #4c1f6c;
 }
 
 .rate:not(:checked)>label:hover,
